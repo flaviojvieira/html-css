@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio 011 - Desafio do Astronauta</title> 
+    <title>Desafio 011 - Astronauta</title>
+    <style>
+        /* pai */
+        section#espaco { 
+            height: 98vh; 
+            background-color: black; 
+            background-image: url(Imagens/espaco.jpg); 
+            background-position: center center; 
+            background-size: cover;
+        }
+
+        /* filho */ 
+        article#astronauta {       
+            background-image: url(Imagens/astronauta.png); 
+            background-repeat: no-repeat; 
+            background-position: center center; 
+            background-size: cover; 
+            height: 300px; 
+            width: 300px; 
+
+            /* alinhamento vertical da img*/
+            position: relative; 
+            left: 50%; 
+            top: 50%; 
+            transform: translate(-50%, -50%);                 
+        }
+    </style>
 </head>
 <body>
-    
+    <section id="espaco"> <!-- pai -->
+        <article id="astronauta"> <!-- filho -->
+
+        </article>
+    </section>
 </body>
 </html>
