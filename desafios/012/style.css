@@ -9,105 +9,61 @@
    font-style: normal; */
 
 * {
-    padding: 0;
-    margin: 0; 
-    
+    margin: 0px;  
+    padding: 0px;       
 }
 
 body {
-    font-family: "Passion One", sans-serif;
-    font-weight: 400;     
+    min-height: 100vh;
+    background-color: black;
 }
 
 header {
-    background-color: black;
-    background-size: cover;
+    background-color: black;    
     color: white;
     text-align: center;
-    padding: 40px 0;  
-    font-size: 30px;
-}  
+    padding: 50px 0;   
+} 
 
-#miltonduarte {
-    font-size: 16px;    
+header > h1 {
+    font-variant: small-caps;
 }
 
-header a {
+a {
     color: white;
     text-decoration: none;
+    font-weight: bolder;
 }
 
-header a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-body main {
-    font-family: "Sriracha", cursive;
-    font-weight: 400;
-    font-style: normal;    
-}
-
 section {
-    padding: 20px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+section.nornal {
+    background-color: white;  
 }
 
-.semfoto p {
-    padding: 5px;    
-    width: 220px;    
-    text-align: justify;  
-   
-}
-
-.comfoto1 {    
-    background-image: url(imagens/background001.jpg);
-    background-attachment: fixed;   
-    background-repeat: no-repeat;  
-    background-position: center center; 
-    box-shadow: inset 2px 2px 30px black;
-      
-}
-
-.comfoto1 p {
-    background-color: rgba(0, 0, 0, 0.301);
+section.imagem{
+    background-color: rgba(255, 255, 255, 0.596);
     color: white;
-    text-shadow: 1px 1px 1px black;
-    max-width: 220px;
-    padding: 5px;
-    margin: 30px 0;
 }
 
-.comfoto2 {   
-    background-image: url(imagens/background002.jpg);
-    background-attachment: fixed;   
-    background-repeat: no-repeat;  
-    background-position: center center;  
-    box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.507);  
-}
-
-.comfoto2 p {
-    background-color: rgba(0, 0, 0, 0.301);
-    color: white;
-    text-shadow: 1px 1px 1px black;
-    max-width: 220px;
-    padding: 5px;
-    margin: 30px 0;
+section.imagem > p {
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.233);
 }
 
 footer {
     background-color: black;
-    text-align: center;
-    font-size: px;
+    text-align: center;    
     color: white;
     padding: 10px;    
 }
 
-footer a {
-    color: white;
-    text-decoration: none;
-    font-weight: 50;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
 
