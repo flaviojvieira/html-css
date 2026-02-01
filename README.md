@@ -1,2 +1,4 @@
 # html-css
-Curso HTML5 e CSS3 - CursoemVideo
+Curso de HTML5 e CSS3 - CursoemVideo
+
+Gerenciando meus dispositórios!
