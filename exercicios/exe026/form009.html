@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <h1>Exemplo de Formulário</h1>
+        <p>
+            <label for="inot">Nota: </label>
+            <input type="range" name="not" id="inot" min="0" max="10" value="5" oninput="ires.innerHTML = Number(inot.value)">      
+            <output name="res" id="ires">5</output>
+        </p>
+      
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

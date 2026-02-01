@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #D9A05B, #BF8C2C);
+    
+}
+
+main {
+    background-color: white;
+    padding: 10px;
+    width: 600px;    
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #7a591ce0;
+    
+}
+
+h1 {
+    color: #733C1D;
+    text-shadow: 1px px 2px #3f2110;   
+    text-align: center; 
+}
+
+h2 {
+    color: #8C5320;
+}

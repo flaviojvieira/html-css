@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <label for="iest">Estado</label>
+        <select name="estado" id="iest">
+            <option value="" selected>--------- Escolha ---------</option>
+            <optgroup label="Sudeste">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </optgroup>
+
+            <optgroup label="Norte">
+                <option value="MA">Maranhão</option>
+                <option value="PE">Pernambuco</option>
+                <option value="RN">Rio Grande do Norte</option>
+            </optgroup>
+        </select>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="listaprof">
+            <datalist id="listaprof">
+                <option >Administrador</option>
+                <option >Contabilista</option>
+                <option >Desenvolvedor</option>
+                <option >Professor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem</label> <br>
+            <textarea name="msg" id="imsg"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <fieldset style="background-color: rgba(0, 0, 255, 0.123);">
+        <legend>Tentando Fazer Sozinho</legend>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <label for="iest2">Estado</label>
+            <select name="estado" id="iest2">
+                <option value="">--------Escolha--------</option>
+                <optgroup label="Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+                 <optgroup label="Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+            </select>
+            <p>
+                <label for="iprof2">Profissão</label>
+                <input type="text" name="prof2" id="iprof2" list="listaprof2">
+                <datalist id="listaprof2">
+                    <option>Professor</option>
+                    <option>Desenvolvedor</option>
+                    <option>Encanador</option>
+                </datalist>                
+            </p>    
+            <p>
+                <label for="imsg2">Mensagem</label> <br>
+                <textarea name="msg2" id="imsg2"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>   
+        </form>
+    </fieldset>
+</body>
+</html>

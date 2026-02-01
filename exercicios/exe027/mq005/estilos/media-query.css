@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+@charset "UTF-8";
+
+/* Todas as demais mídias */ 
+
+/* Typical Device Breakpoints  - pesquisa no Google em 01/02/2026
+Telas pequenas - até 480px
+Celular - 481 a 767px
+Tablet - 768px a 1024px
+Desktop - 1025px a 1366px 
+Telas grandes - 1367px em diante*/
+
+/* Telas grandes */
+@media screen and (min-width: 768px) {
+    i#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    main {
+        width: 768px;
+    }
+}
+
+
