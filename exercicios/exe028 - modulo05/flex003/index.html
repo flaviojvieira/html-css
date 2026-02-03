@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container1 {
+            background-color: blue;
+            
+            /* padrão */
+            display: flex;
+            flex-direction: row; /* linha deitada, esquerda para direita */
+            flex-wrap: nowrap;   /* não quebra */           
+            
+        }
+
+        div.container2 {
+            background-color: blue;
+           
+            display: flex;
+            flex-direction: row; /* linha deitada, esquerda para direita */
+            flex-wrap: wrap;  /* quebra sentido cros-axis (pra baixo) */
+            
+            flex-flow: row wrap; /* junção entre "flex-direction + flex-wrap, em uma única função*/
+        }
+
+        div.container3 {
+            background-color: blue;
+           
+            display: flex;
+            flex-direction: row; /* linha deitada, esquerda para direita */
+            flex-wrap: wrap-reverse;  /* quebra sentido cros-axis invertido (pra cima) */                                    
+        }
+
+        div.container4 {
+            background-color: blue;
+           
+            display: flex;
+            flex-direction: row-reverse; /* linha deitada, direita para esquerda */
+            flex-wrap: wrap;  /* quebra sentido cros-axis (pra baixo) */                              
+        }
+
+          div.container5 {
+            background-color: blue;
+           
+            display: flex;
+            flex-direction: row-reverse; /* linha deitada, direita para esquerda */
+            flex-wrap: wrap-reverse;  /* quebra sentido cros-axis invertido (pra cima) */                              
+        }
+
+        div.item {
+            background-color: cadetblue; 
+            border: 1px solid black;                 
+            text-align: center;  
+            /* flex: auto;  não deixa espaço vazio*/                       
+        }  
+
+    </style>
+</head>
+<body>
+    <ins>Padrão</ins> <br>
+    flex-direction: row; (linha deitada, esqerda para direita) <br>
+    flex-wrap: nowrap;   (não quebra)
+    <div class="container1"> <!-- Div Pai -->        
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div> <br>
+    <ins>Para Baixo</ins> <br>
+    flex-direction: row; (linha deitada, esqerda para direita) <br>
+    flex-wrap: wrap; (quebra sentido cros-axis (pra baixo))
+     <div class="container2"> <!-- Div Pai -->
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div> <br>
+     <ins>Para Cima</ins> <br>
+    flex-direction: row; (linha deitada, esqerda para direita) <br>
+    flex-wrap: wrap-reverse; (quebra sentido cros-axis invertido (pra cima))
+     <div class="container3"> <!-- Div Pai -->
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div> <br>
+    <ins>Para Baixo</ins> <br>
+    flex-direction: row-reverse; (linha deitada, direita para esquerda) <br>
+    flex-wrap: wrap; (quebra sentido cros-axis (pra baixo))
+      <div class="container4"> <!-- Div Pai -->
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div> <br>
+    <ins>Para Cima</ins> <br>
+    flex-direction: row-reverse; (linha deitada, direita para esquerda) <br>
+    flex-wrap: wrap-reverse; (quebra sentido cros-axis invertido (pra cima))
+    <div class="container5"> <!-- Div Pai -->
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div> <br>   
+</body>
+</html>

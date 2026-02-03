@@ -7,8 +7,9 @@
     <style>
         div.row,.rowr,.column, .columnr {
             background-color: rgb(143, 233, 236);            
-            border: 1px solid black;
-            padding: 10px;                          
+            border: 2px solid black;
+            padding: 10px;   
+            margin-bottom: 20px;                       
         }      
 
         div.container {
@@ -34,7 +35,8 @@
             padding: 10px;
             flex-direction: column;            
             margin: auto;
-            border-radius: 10px;                        
+            border-radius: 10px;  
+            margin-bottom: -35px;                      
         } 
 
            div.container4 {
@@ -43,7 +45,8 @@
             padding: 10px;
             flex-direction: column-reverse;            
             margin: auto;
-            border-radius: 10px;                        
+            border-radius: 10px;  
+            margin-bottom: -35px;                      
         } 
 
         div.item {
@@ -88,13 +91,13 @@
             <div class="item">G</div>
         </div> <br> <br>
     </div>
-        <div class="column">
-            <p>
-                flexbox: column; <br>
-                main-axis: cima para baixo <br>
-                cross-axis: esquerda para direita
-            </p>
-                <div class="container3"> <!-- Div Pai -->
+    <div class="column">
+        <p>
+            flexbox: column; <br>
+            main-axis: cima para baixo <br>
+            cross-axis: esquerda para direita
+        </p>
+        <div class="container3"> <!-- Div Pai -->
             <div class="item">A</div>
             <div class="item">B</div>
             <div class="item">C</div>
@@ -102,21 +105,23 @@
             <div class="item">E</div>
             <div class="item">F</div>
             <div class="item">G</div>
-                </div> <br> <br>
-        </div>
+        </div> <br> <br>
+    </div>
+    <div class="columnr">
         <p>
             flexbox: column-reverse; <br>
             main-axis: baixo para cima <br>
             cross-axis: esquerda para direita
         </p>
-    <div class="container4"> <!-- Div Pai -->        
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-    </div> <br> <br>
+        <div class="container4"> <!-- Div Pai -->
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div> <br> <br>
+    </div>
 </body>
 </html>
