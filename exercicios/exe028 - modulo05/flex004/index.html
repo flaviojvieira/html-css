@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+         div.flex-star,.flex-end,.center,.space-between, .space-evenly, .space-around {
+            background-color: rgb(143, 233, 236);            
+            border: 2px solid black;
+            padding: 10px;   
+            margin-bottom: 20px;                       
+        } 
+
+        div.container1 {
+            background-color: blue;
+            display: flex;                       
+            flex-flow: row nowrap;  
+            justify-content: flex-start;  
+                    
+        } 
+        
+        div.container2 {
+            background-color: blue;
+            display: flex;            
+            flex-flow: row nowrap;  
+            justify-content: flex-end;          
+        }
+
+        div.container3 {
+            background-color: blue;
+            display: flex;            
+            flex-flow: row nowrap;  
+            justify-content: center;          
+        }
+
+        div.container4 {
+            background-color: blue;
+            display: flex;            
+            flex-flow: row nowrap;  
+            justify-content: space-between;          
+        }
+
+        div.container5 {
+            background-color: blue;
+            display: flex;            
+            flex-flow: row nowrap;  
+            justify-content: space-evenly;          
+        }
+
+        div.container6 {
+            background-color: blue;
+            display: flex;            
+            flex-flow: row nowrap;  
+            justify-content: space-around;                    
+        }
+
+        div.container7 {
+            background-color: blue;
+            display: flex;            
+            flex-flow: row nowrap;  
+            justify-content: space-around;  
+            height: 200px;
+            align-items: stretch;        
+        }
+
+        div.container8 {
+            background-color: blue;
+            display: flex;            
+            flex-flow: row nowrap;  
+            justify-content: space-around;  
+            height: 200px;
+            align-items: flex-start;        
+        }
+
+        div.container9 {
+            background-color: blue;
+            display: flex;            
+            flex-flow: row nowrap;  
+            justify-content: space-around;  
+            height: 200px;
+            align-items: flex-end;        
+        }
+
+        div.container10 {
+            background-color: blue;
+            display: flex;            
+            flex-flow: row nowrap;  
+            justify-content: space-around;  
+            height: 200px;
+            align-items: center;        
+        }
+
+        div.item {
+            background-color: cadetblue; 
+            border: 1px solid black;               
+            text-align: center;     
+            padding: 20px;          
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Exemplos do "justify-content:" <br>
+        com "flex-flow: row nowrap;" <br>
+    </h1>
+    <div class="flex-star">
+        <ins>Padrão</ins> <br>
+        <ins>justify-content: flex-star;</ins> <br>
+        Primeiro item fica grudado no main-start (início) e o espaço em branco será jogado para o main-end (final)
+        <div class="container1"> <!-- Div Pai -->
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+    </div> <br>
+    <div class="flex-end">        
+        <ins>justify-content: flex-end;</ins> <br>
+        O último item ficará colado no main-end (final) e o espaço em branco ficará no main-start (início)
+        <div class="container2"> <!-- Div Pai -->
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+    </div> <br>
+    <div class="center">        
+        <ins>justify-content: center;</ins> <br>
+        Ficará exatamente no centro do main-axis e os espaços em branco distribuídos entre o main-star e o main-end
+        <div class="container3"> <!-- Div Pai -->
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+    </div> <br>
+    <div class="space-between">        
+        <ins>justify-content: space-between;</ins> <br>
+        O primeiro e o último elemento ficarão grudados nos extremos (main-start e main-end) e os outros serão distribuídos por igual
+        <div class="container4"> <!-- Div Pai -->
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+    </div> <br>
+    <div class="space-evenly">        
+        <ins>justify-content: space-evenly;</ins> <br>
+        Não grudam nem o primeiro e nem o último item nos extremos (main-start e main-end), todos os elementos do item ficam com espaços iguais, antes e depois
+        <div class="container5"> <!-- Div Pai -->
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+    </div> <br>
+    <div class="space-around">        
+        <ins>justify-content: space-around;</ins> <br>
+        Irá dividir os itens em espaços iguais e centralizar no meio de cada um
+        <div class="container6"> <!-- Div Pai -->
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+    </div>
+
+    <h1>Exemplos com "align-items:"</h1>
+      <div class="space-around">        
+        <ins>align-items: stretch; (parão)</ins> <br>
+        Enlarguece os itens
+        <div class="container7"> <!-- Div Pai -->
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+    </div>
+
+    <div class="space-around">        
+        <ins>align-items: flex-start;</ins> <br>
+        Gruda os itens no início do eixo transversal (cross-star) e o espaço em branco no cross-end
+        <div class="container8"> <!-- Div Pai -->
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+    </div>
+
+    <div class="space-around">        
+        <ins>align-items: flex-end;</ins> <br>
+        Gruda os itens no final do eixo transversal (cross-end) e o espaço em branco no cross-star
+        <div class="container9"> <!-- Div Pai -->
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+    </div>
+
+     <div class="space-around">        
+        <ins>align-items: center;</ins> <br>
+        Pega os itens e coloca no centro, deixando os espaços livres divididos esntre os estremos (cross-satr e cross-end)
+        <div class="container10"> <!-- Div Pai -->
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+    </div>
+</body>
+</html>
