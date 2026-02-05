@@ -19,9 +19,7 @@
             padding: 10px;
             margin: 5px;   
 
-            flex-basis: 300px;
-            flex-grow: 0;
-            flex-shrink: 1;            
+            flex: 0 1 300px;                      
         }   
         
          div.item2 {
@@ -30,9 +28,7 @@
             padding: 10px;
             margin: 5px;   
 
-            flex-basis: 300px;
-            flex-grow: 2;
-            flex-shrink: 0;            
+            flex: 2 0 300px;                       
         } 
 
          div.item3 {
@@ -40,31 +36,26 @@
             text-align: center;             
             margin: 5px;   
 
-            flex-basis: 300px;
-            flex-grow: 2; 
-            flex-shrink: 1;                                  
+            flex: 2 1 300px;                                             
         } 
 
     </style>
 </head>
-<body>    
-    <div>           
-        <ins > cada item com 300px <br>
-            
-            
-        </ins>
-    </div>             
-        <div class="container"> <!-- Div Pai -->
-            <div class="item1">
-                A <br>flex-grow: 0; (não aumenta) <br> flex-shrink: 1 (encolhe)
-            </div>
-            <div class="item2">
-                B <br>flex-grow: 2; (aumenta dobrando em relação ao 3) <br> flex-shrink: 0 (não encolhe)
-            </div>
-           <div class="item3">
-                C <br>flex-grow: 1; (aumenta) <br> flex-shrink: 2 (encolhe dobrando em relaçao ao 1)
-            </div>
+<body>               
+    cada item com 300px <br>
+    usando a tag "flex" <br>
+    flex: flex-grow + flex-shrink + flex-basis               
+    <div class="container"> <!-- Div Pai -->
+        <div class="item1">
+            A <br>flex-grow: 0; (não aumenta) <br> flex-shrink: 1 (encolhe)
+        </div>
+        <div class="item2">
+            B <br>flex-grow: 2; (aumenta dobrando em relação ao 3) <br> flex-shrink: 0 (não encolhe)
+        </div>
+        <div class="item3">
+            C <br>flex-grow: 1; (aumenta) <br> flex-shrink: 2 (encolhe dobrando em relaçao ao 1)
         </div>
     </div>
+</div>
 </body>
 </html>
