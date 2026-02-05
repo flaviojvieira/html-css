@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: blue;                                  
+           
+            display: flex;
+            flex-flow: row nowrap;
+                       
+        }
+
+        div.item1 {
+            background-color: white;                         
+            text-align: center;   
+            padding: 10px;
+            margin: 5px;   
+
+            flex-basis: 300px;
+            flex-grow: 0;
+            flex-shrink: 1;            
+        }   
+        
+         div.item2 {
+            background-color: white;                         
+            text-align: center;   
+            padding: 10px;
+            margin: 5px;   
+
+            flex-basis: 300px;
+            flex-grow: 2;
+            flex-shrink: 0;            
+        } 
+
+         div.item3 {
+            background-color: white;                         
+            text-align: center;             
+            margin: 5px;   
+
+            flex-basis: 300px;
+            flex-grow: 2; 
+            flex-shrink: 1;  
+                                 
+        } 
+
+    </style>
+</head>
+<body>    
+    <div>           
+        <ins > cada item com 300px <br>
+            
+            
+        </ins>
+    </div>             
+        <div class="container"> <!-- Div Pai -->
+            <div class="item1">
+                A <br>flex-grow: 0; (não aumenta) <br> flex-shrink: 1 (encolhe)
+            </div>
+            <div class="item2">
+                B <br>flex-grow: 2; (aumenta dobrando em relação ao 3) <br> flex-shrink: 0 (não encolhe)
+            </div>
+           <div class="item3">
+                C <br>flex-grow: 1; (aumenta) <br> flex-shrink: 2 (encolhe dobrando em relaçao ao 1)
+            </div>
+        </div>
+    </div>
+</body>
+</html>
