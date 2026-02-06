@@ -17,7 +17,7 @@ body {
 header {
     background-color: gray;
     color: white;
-    padding: 10px; 
+    padding: 10px;     
     
     display: flex;
     flex-flow: row wrap; 
@@ -25,27 +25,25 @@ header {
     align-items: center;    
 }
 
-h1 {
-    border: 1px solid black;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+h1 {    
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
     flex: 0 0 200px;
 }
 
-nav {    
-    border: 1px solid black;
-
+nav {     
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-end;
-   
+    justify-content: flex-end;  
 }
 
 a {
     color: white;    
     background-color: black;
     padding: 10px;
-    border-radius: 5px;   
-    margin-right: 5px;
+    border-radius: 5px;      
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.507);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    margin: 5px;
     text-decoration: none;
     text-align: center;
 }
@@ -53,12 +51,15 @@ a {
 a:hover {
     background-color: white;
     color: black;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.507);
     transition: .4s;
 }
 
 main {
-    background-color: white;
-    margin: 10px;
+    width: 70%;
+    background-color: white;    
+    margin: 10px auto;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.534);
