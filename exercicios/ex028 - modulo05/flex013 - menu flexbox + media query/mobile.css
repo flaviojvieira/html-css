@@ -10,6 +10,7 @@ h1 {
 
 a {
     width: 90vw;
+    border-radius: 10px;
     border:1px solid white;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
