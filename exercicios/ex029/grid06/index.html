@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Áreas</title>
+    <style>
+
+        body {
+            background-color: cadetblue;
+        }
+        .container {                  
+            display: grid;  
+            gap: 5px;          
+            grid-template-rows: repeat(7, 100px);             
+            grid-template-columns: repeat(6, 1fr);              
+        }
+
+        div {            
+            text-align: center;            
+            font-size: 1.2em;
+            border: 1px solid black;
+        }    
+
+        .caixa1 {            
+            background-color: white;
+            grid-area: 1 / 1 / 1 / 7; /* row-star / column-star / row-end / column-end */
+                      
+        }
+
+        .caixa2 {
+            background-color: white;          
+            grid-area: 2 / 1 / span 4 / span 2; 
+        }
+
+        .caixa3 {
+            background-color: white;           
+            grid-area: 2 / 3 / 4 / 5; 
+        }   
+
+        .caixa4 {
+            background-color: white;             
+            grid-area: span 2 / span 2 / span 5 / span 4; 
+        }
+        
+        .caixa5 {           
+            background-color: white;           
+            grid-area: 2 / 5 / 6 / 7; 
+        }
+
+        .caixa6 {
+            background-color: white;
+            grid-area: 6 / 1 / 8 / 7; 
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="caixa1">header</div>
+        <div class="caixa2">nav</div>
+        <div class="caixa3">section</div> 
+        <div class="caixa4">section</div> 
+        <div class="caixa5">aside</div>
+        <div class="caixa6">footer</div>                           
+    </main>
+</body>
+</html>
